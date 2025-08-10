@@ -1,0 +1,24 @@
+.pdf-container {
+    margin: 30px 0;
+}
+
+.pdf-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pdf-item {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+}
+
+.pdf-item embed {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

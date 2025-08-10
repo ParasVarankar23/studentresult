@@ -1,0 +1,80 @@
+.teacher-profile-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.teacher-profile-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.teacher-profile-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.teacher-profile-section h2 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.teacher-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.teacher-profile-grid p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.teacher-profile-grid input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.teacher-profile-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.teacher-profile-buttons .teacher-profile-edit-btn,
+.teacher-profile-buttons .teacher-profile-save-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.teacher-profile-buttons .teacher-profile-save-btn {
+    background-color: #28a745;
+}
+
+.teacher-profile-buttons .teacher-profile-edit-btn:hover,
+.teacher-profile-buttons .teacher-profile-save-btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .teacher-profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

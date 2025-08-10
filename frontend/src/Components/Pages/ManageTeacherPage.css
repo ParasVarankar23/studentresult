@@ -1,0 +1,58 @@
+.manage-teachers {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .teachers-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .teachers-table th, .teachers-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .teachers-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .teachers-table th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4CAF50;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .action-button:hover {
+    color: #45a049;
+  }
+  

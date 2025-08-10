@@ -1,0 +1,96 @@
+
+.dashboard-container-college {
+  display: flex;
+  height: auto;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: #333;
+  position: fixed;
+  height: 100%;
+  transition: width 0.3s;
+  overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-container {
+  padding: 10px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #333;
+  margin-left: auto;
+}
+
+.sidebar-link, .sidebar-link-button-admin {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar-link:hover, .sidebar-link-button-admin:hover {
+  background-color: #f4f4f4;
+}
+
+.sidebar-sublink {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  margin-left: 15px;
+}
+
+.sidebar-sublink:hover {
+  background-color: #f4f4f4;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+.user-submenu, .course-submenu, .schedule-submenu, .report-submenu {
+  padding-left: 25px;
+  background-color: #fff;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+
+.image-container-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 600px;
+  width: 1200px;
+  margin-left: 250px;
+}
+
+.image-container-admin img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}

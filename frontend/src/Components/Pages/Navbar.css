@@ -1,0 +1,35 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #FFA500;
+    padding: 35px 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(to right, #FF5733, #FF8D1A, #FF5733);
+}
+
+.navbar-title {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar-title span {
+    display: inline-block;
+    padding-right: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-title i {
+    margin: 0 10px; /* Spacing between icons and text */
+}

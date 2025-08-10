@@ -1,0 +1,62 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-top: 2px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link, .sidebar-sublink {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  background: none;
+}
+
+.sidebar-link span, .sidebar-sublink span {
+  flex: 1;
+}
+
+.sidebar-link:hover, .sidebar-sublink:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-submenu,
+.course-submenu,
+.schedule-submenu,
+.report-submenu,
+.students-submenu {
+  padding-left: 30px;
+}
+
+.collapsed .sidebar-link span {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.students-submenu .sidebar-sublink {
+  padding: 8px 20px;
+}

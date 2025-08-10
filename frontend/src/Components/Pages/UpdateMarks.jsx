@@ -1,0 +1,67 @@
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import './UpdateMarks.css';
+
+const UpdateMarks = () => {
+const { id } = useParams();
+const [formData, setFormData] = useState({
+    studentName: '',
+    rollNo: '',
+    course: '',
+    class: '',
+    subjectCode: '',
+    subject: '',
+    theory: '',
+    internal: '',
+    total: ''
+});
+const navigate = useNavigate();
+
+useEffect(() => {
+    const fetchMarks = async () => {
+    try {
+        const response = await axios.get(`http://localhost:8081/marks/${id}`);
+        setFormData(response.data);
+    } catch (error) {
+        console.error('Error fetching marks:', error);
+    }
+    };
+
+    fetchMarks();
+}, [id]);
+
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+    await axios.put(`http://localhost:8081/update-marks/${id}`, formData);
+    navigate('/ListMarks');
+    } catch (error) {
+    console.error('Error updating marks:', error);
+    }
+};
+
+return (
+    <div className="add-marks-container">
+    <h2>Update Marks</h2>
+    <form onSubmit={handleSubmit} className="add-marks-form">
+        <input type="text" name="studentName" value={formData.studentName} onChange={handleChange} placeholder="Student Name" required />
+        <input type="text" name="rollNo" value={formData.rollNo} onChange={handleChange} placeholder="Roll Number" required />
+        <input type="text" name="course" value={formData.course} onChange={handleChange} placeholder="Course" required />
+        <input type="text" name="class" value={formData.class} onChange={handleChange} placeholder="Class" required />
+        <input type="text" name="subjectCode" value={formData.subjectCode} onChange={handleChange} placeholder="Subject Code" required />
+        <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject" required />
+        <input type="number" name="theory" value={formData.theory} onChange={handleChange} placeholder="Theory Marks" required />
+        <input type="number" name="internal" value={formData.internal} onChange={handleChange} placeholder="Internal Marks" required />
+        <input type="number" name="total" value={formData.total} onChange={handleChange} placeholder="Total Marks" required />
+        <button type="submit">Update Marks</button>
+    </form>
+    </div>
+);
+};
+
+export default UpdateMarks;

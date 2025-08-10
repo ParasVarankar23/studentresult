@@ -1,0 +1,82 @@
+.attendance-page {
+    padding: 20px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+.back-arrow-attendance {
+    position: absolute;
+    top: 50px;
+    left: 485px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form-attendance {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.login-form-attendance label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+.login-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.attendance-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.attendance-table tr:hover {
+    background-color: #ddd;
+}
+
+.total-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}

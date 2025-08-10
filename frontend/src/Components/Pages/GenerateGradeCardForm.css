@@ -1,0 +1,92 @@
+.generate-grade-card-form {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.back-arrow-grade-card{
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.generate-grade-card-form-header {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.generate-grade-card-form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.generate-grade-card-form-inputs label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.generate-grade-card-form-inputs input {
+    padding: 8px;
+    width: 90%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.generate-grade-card-form-inputs button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.generate-grade-card-form-inputs button:hover {
+    background-color: #45a049;
+}
+
+.generate-grade-card-form-result {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+.generate-grade-card-form-result-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.generate-grade-card-form-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.generate-grade-card-form-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.generate-grade-card-form-table th,
+.generate-grade-card-form-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.generate-grade-card-form-table th {
+    background-color: #f2f2f2;
+}

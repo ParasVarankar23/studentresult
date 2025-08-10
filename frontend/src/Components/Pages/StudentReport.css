@@ -1,0 +1,172 @@
+.student-report-card {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.report-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.label {
+  flex: 1;
+  font-weight: bold;
+  color: #333;
+}
+
+.input, .select, .input-file {
+  flex: 2;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-file {
+  padding: 0;
+}
+
+.add-subject-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-subject-btn:hover {
+  background-color: #1976d2;
+}
+
+.remove-subject-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-subject-btn:hover {
+  background-color: #e64a19;
+}
+
+.generate-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #45a049;
+}
+
+.print-btn {
+  background-color: #f38021;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background-color: #e64a19;
+}
+
+.subjects {
+  margin-top: 20px;
+}
+
+.subject {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.subject .row {
+  margin-bottom: 8px;
+}
+
+.subject .input {
+  font-size: 14px;
+}
+
+.subject input[readonly] {
+  background-color: #f1f1f1;
+}
+
+.photo-preview {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.student-photo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.report-summary {
+  margin-top: 20px;
+  max-width: 1000px;
+  padding: 20px;
+  margin-left: 62px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  align-items: center;
+}
+
+.summary-title {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.report-table th, .report-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.report-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.summary-details p {
+  margin: 5px 0;
+}
+
+.personal-info h1{
+  text-align:center;
+  border: 5px;
+  border-radius: solid grey 10px;
+}
